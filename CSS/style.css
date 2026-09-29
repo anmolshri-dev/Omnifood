@@ -48,21 +48,31 @@ body {
   font-weight: 400;
   color: #555;
 }
+/******************
+GENERALREUSABLE COMPONENTS
+******************/
 
-.section-hero {
-  padding: 9.6rem 0;
-  background-color: #fdf2e9;
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+.grid {
+  display: grid;
+  gap: 9.6rem;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-/* One single .hero rule: 2 columns, text left, image right */
-.hero {
-  max-width: 130rem;
-  margin: 0 auto;
-  display: grid;
-  padding: 0 3.2rem;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 9.6rem;
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .heading-primary {
@@ -72,12 +82,6 @@ body {
   letter-spacing: -0.5px;
   margin-bottom: 3.2rem;
   color: #333;
-}
-
-.hero-description {
-  font-size: 1.8rem;
-  line-height: 1.5;
-  margin-bottom: 4.8rem;
 }
 
 .btn:link,
@@ -115,6 +119,90 @@ body {
 
 .margin-right-sm {
   margin-right: 2rem !important;
+}
+/***************** 
+      HEADER
+ *******************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4.6rem;
+  background-color: #fdf2e9;
+
+  /* Because we want header to be sticky later */
+  height: 9.6rem;
+}
+
+.logo {
+  height: 2.4rem;
+}
+/****************
+      NAVIGATION
+ *******************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #e67e22;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  background-color: #e67e22;
+  color: #fff;
+  border: 9px;
+  padding: 1.2rem 2.4rem;
+  border-radius: 0.8rem;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #2e1907;
+  color: #f0b27a;
+}
+
+/****************
+HERO SECTION
+*****************/
+
+.section-hero {
+  padding: 4.8rem 0 9.6rem 0;
+  background-color: #fdf2e9;
+}
+
+/* One single .hero rule: 2 columns, text left, image right */
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  padding: 0 3.2rem;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 9.6rem;
+}
+
+.hero-description {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-bottom: 4.8rem;
 }
 
 .delivered-meals {
@@ -164,4 +252,13 @@ body {
 
 .hero-img {
   width: 100%;
+}
+
+/****************
+How SECTION
+*****************/
+
+.section-how {
+  padding: 9.6rem 0 9.6rem 0;
+  background-color: #fdf2e9;
 }
