@@ -138,7 +138,6 @@ FEATURED IN  SECTION
 **********************/
 .section-featured {
   padding: 4.8rem 0 3.2rem 0;
-  background-color: #fdf2e9;
 }
 
 .heading-featured-in {
@@ -166,7 +165,6 @@ How IT WORKS SECTION
 **********************/
 .section-how {
   padding: 9.6rem 0 9.6rem 0;
-  background-color: #fdf2e9;
 }
 
 .step-img {
@@ -239,7 +237,6 @@ MEALS SECTION
 *****************/
 .section-meals {
   padding: 9.6rem 0 9.6rem 0;
-  background-color: #fdf2e9;
 }
 
 .tag {
@@ -334,13 +331,21 @@ TESTIMONIALS SECTION
 *********************/
 
 .section-testimonials {
-  padding: 9.6rem 0;
+  background-color: #fdf2e9;
+  display: grid;
+  grid-template-columns: 70fr 30fr;
+  align-items: center;
+}
+
+.testimonials-container {
+  padding: 9.6rem;
 }
 
 .testimonials {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4.8rem;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
 }
 
 .testimonial-img {
@@ -353,9 +358,76 @@ TESTIMONIALS SECTION
   font-size: 1.8rem;
   line-height: 1.8;
   margin-bottom: 16px;
+  color: #5e0101;
 }
 
 .testimonial-name {
   font-size: 1.6rem;
-  color: #777;
+  color: #5e0101;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+.gallery-item img {
+  display: block;
+  width: 100%;
+  transition: all 0.5sec;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+/****************
+PRICING SECTION
+*****************/
+.section-pricing {
+  padding: 9.6rem 0 9.6rem 0;
+}
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.plan-name {
+  color: #e67e22;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+
+.plan-price {
+  font-size: 5.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+
+.plan-price span {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #aaa;
+  margin-bottom: 4.8rem;
+}
+
+.plan-sign-up {
+  text-align: center;
+  margin-top: 4.8rem;
 }

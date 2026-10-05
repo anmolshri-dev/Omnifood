@@ -18,7 +18,7 @@ Default: 1
 -Tints: #FDF2E9, #FAE5D3,#F8D8BD,#F5CBA7
 -Shades:#CF711F,#B8651B,#B8651B
 -Accents:
--Greys: #333  #555
+-Greys: #333  #555 #5e0101;
 
 ---- 03 SHADOWS :
 ---- 04 BORDER-RADIUS :
@@ -164,6 +164,20 @@ GENERALREUSABLE COMPONENTS
 link:active {
   color: #5555;
   border-bottom: 1px solid transparent;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
 }
 
 /* HELPER CLASSES */
