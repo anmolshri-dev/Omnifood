@@ -211,6 +211,11 @@ GENERALREUSABLE COMPONENTS
   gap: 1.6rem;
 }
 
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 8px rgba(207, 113, 31, 0.5);
+}
+
 /* HELPER CLASSES */
 
 .margin-right-sm {
