@@ -417,8 +417,8 @@ PRICING SECTION
   text-transform: uppercase;
   font-size: 1.4rem;
   font-weight: 600;
-  color: #fff;
-  background-color: #e67e22;
+  color: #2e1907;
+  background-color: yellow;
   top: 6%;
   right: -18%;
   padding: 0.8rem 8rem;
@@ -458,4 +458,123 @@ PRICING SECTION
 .plan-sign-up {
   text-align: center;
   margin-top: 4.8rem;
+}
+
+.plan-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+  color: #aaa;
+  margin-top: 4.8rem;
+}
+
+/****************
+FEATURED SECTION
+*****************/
+
+.feature-icon {
+  color: #e67e22;
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: #fdf2e9;
+  border-radius: 50%;
+  padding: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+
+.feature-tittle {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+/****************
+CTA SECTION
+*****************/
+
+.section-cta {
+}
+.container {
+}
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* background-color: #fdf2e9; */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 1.2rem;
+
+  overflow: hidden;
+  background-image: linear-gradient(to left, #eea564, #cf711f);
+}
+
+.cta .heading-secondary {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #231305;
+  margin-bottom: 3.2rem;
+}
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #3a2009;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  font-weight: 400;
+  margin-bottom: 4.8rem;
+}
+
+.cta-text {
+  margin-bottom: 4.8rem;
+}
+
+.cta-img-box {
+  background-image:
+    linear-gradient(to left, rgba(115, 63, 17, 0.3), rgba(236, 158, 89, 0.3)),
+    url("../img/eating.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 1.6rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem 1.6rem;
+  font-size: 1.2rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 8px rgba(249, 2, 2, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #bbb;
+}
+
+.cta-form select {
+}
+.cta-form button {
+}
+.cta-form label {
 }

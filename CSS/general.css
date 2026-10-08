@@ -16,7 +16,7 @@ Default: 1
 -Primary: #e67e22
 
 -Tints: #FDF2E9, #FAE5D3,#F8D8BD,#F5CBA7
--Shades:#CF711F,#B8651B,#B8651B
+-Shades:#CF711F,#B8651B,#A15818 ,#5C320E
 -Accents:
 -Greys: #333  #555 #5e0101;
 
@@ -126,17 +126,39 @@ GENERALREUSABLE COMPONENTS
   margin-bottom: 1.6rem;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
-  background-color: #e67e22;
-  color: #fff;
   text-decoration: none;
   font-size: 1.8rem;
   font-weight: 600;
   padding: 1.6rem 3.2rem;
   border-radius: 0.8rem;
   transition: all 0.3s;
+
+  /*ONLY NECESSARY FOR .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn--form {
+  background-color: #45260e;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1rem;
+}
+
+.btn--form:hover {
+  background-color: #f3bf91;
+  color: #45260a;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: #fbecde;
+  color: #45260e;
 }
 
 .btn--full:hover,
@@ -170,7 +192,7 @@ GENERALREUSABLE COMPONENTS
 }
 
 .link:hover,
-link:active {
+.link:active {
   color: #5555;
   border-bottom: 1px solid transparent;
 }
