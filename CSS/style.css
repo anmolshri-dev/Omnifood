@@ -55,7 +55,7 @@
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
   background-color: #2e1907;
-  color: #f0b27a;
+  color: greenyellow;
 }
 
 /****************
@@ -575,9 +575,4 @@ CTA SECTION
 .cta *:focus {
   outline: none;
   box-shadow: 0 0 0 8px rgba(253, 242, 233, 0.5);
-}
-
-.cta-form button {
-}
-.cta-form label {
 }
